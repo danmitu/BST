@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		92959958248EB76C00A5942F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92959957248EB76C00A5942F /* main.swift */; };
+		92959966248EB7A500A5942F /* BSTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92959965248EB7A500A5942F /* BSTTests.swift */; };
+		9295996C248EB7B400A5942F /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295996B248EB7B400A5942F /* BST.swift */; };
+		9295996D248EB7B400A5942F /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295996B248EB7B400A5942F /* BST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +29,21 @@
 		92959954248EB76C00A5942F /* Swift-BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift-BST"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92959957248EB76C00A5942F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9295995E248EB78300A5942F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		92959963248EB7A500A5942F /* BSTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92959965248EB7A500A5942F /* BSTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTests.swift; sourceTree = "<group>"; };
+		92959967248EB7A500A5942F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9295996B248EB7B400A5942F /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		92959951248EB76C00A5942F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92959960248EB7A500A5942F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +58,7 @@
 			children = (
 				9295995E248EB78300A5942F /* .gitignore */,
 				92959956248EB76C00A5942F /* Swift-BST */,
+				92959964248EB7A500A5942F /* BSTTests */,
 				92959955248EB76C00A5942F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				92959954248EB76C00A5942F /* Swift-BST */,
+				92959963248EB7A500A5942F /* BSTTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				92959957248EB76C00A5942F /* main.swift */,
+				9295996B248EB7B400A5942F /* BST.swift */,
 			);
 			path = "Swift-BST";
+			sourceTree = "<group>";
+		};
+		92959964248EB7A500A5942F /* BSTTests */ = {
+			isa = PBXGroup;
+			children = (
+				92959965248EB7A500A5942F /* BSTTests.swift */,
+				92959967248EB7A500A5942F /* Info.plist */,
+			);
+			path = BSTTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +110,23 @@
 			productReference = 92959954248EB76C00A5942F /* Swift-BST */;
 			productType = "com.apple.product-type.tool";
 		};
+		92959962248EB7A500A5942F /* BSTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92959968248EB7A500A5942F /* Build configuration list for PBXNativeTarget "BSTTests" */;
+			buildPhases = (
+				9295995F248EB7A500A5942F /* Sources */,
+				92959960248EB7A500A5942F /* Frameworks */,
+				92959961248EB7A500A5942F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSTTests;
+			productName = BSTTests;
+			productReference = 92959963248EB7A500A5942F /* BSTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +138,9 @@
 				ORGANIZATIONNAME = "Dan Mitu";
 				TargetAttributes = {
 					92959953248EB76C00A5942F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					92959962248EB7A500A5942F = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -113,9 +159,20 @@
 			projectRoot = "";
 			targets = (
 				92959953248EB76C00A5942F /* Swift-BST */,
+				92959962248EB7A500A5942F /* BSTTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92959961248EB7A500A5942F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92959950248EB76C00A5942F /* Sources */ = {
@@ -123,6 +180,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				92959958248EB76C00A5942F /* main.swift in Sources */,
+				9295996C248EB7B400A5942F /* BST.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9295995F248EB7A500A5942F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92959966248EB7A500A5942F /* BSTTests.swift in Sources */,
+				9295996D248EB7B400A5942F /* BST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +331,42 @@
 			};
 			name = Release;
 		};
+		92959969248EB7A500A5942F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DR8NB2Y6C4;
+				INFOPLIST_FILE = BSTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danmitu.BSTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9295996A248EB7A500A5942F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DR8NB2Y6C4;
+				INFOPLIST_FILE = BSTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danmitu.BSTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +384,15 @@
 			buildConfigurations = (
 				9295995C248EB76C00A5942F /* Debug */,
 				9295995D248EB76C00A5942F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92959968248EB7A500A5942F /* Build configuration list for PBXNativeTarget "BSTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92959969248EB7A500A5942F /* Debug */,
+				9295996A248EB7A500A5942F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
